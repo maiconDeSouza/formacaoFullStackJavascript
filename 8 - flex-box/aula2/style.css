@@ -1,0 +1,50 @@
+.container{
+    border: 5px solid cyan;
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap;
+     flex-flow: row wrap; */
+
+     justify-content: space-between;
+     
+}
+
+.caixa{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.caixa:nth-child(1){
+    background-color: red;
+}
+
+.caixa:nth-child(2){
+    background-color: blue;
+}
+
+.caixa:nth-child(3){
+    background-color: yellow;
+}
+
+.caixa:nth-child(4){
+    background-color: green;
+}
+
+.caixa:nth-child(5){
+    background-color: lightpink;
+}
+
+
+.caixa:nth-child(6){
+    background-color: navy;
+}
+
+.caixa:nth-child(7){
+    background-color: seagreen;
+}
+
+.caixa:nth-child(8){
+    background-color: tomato;
+}

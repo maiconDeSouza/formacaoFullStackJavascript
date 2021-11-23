@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Dados usuario</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="digite seu nome">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="" placeholder="digite seu e-mail">
+            <br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="" placeholder="digite sua senha">
+            <br><br>
+
+            <label for="sexo">Sexo:</label>
+            <br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="" style="margin-left: 69px;" value="masculino"><br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="sexo" id="" style="margin-left: 76px;" value="femino"><br>
+            <label for="prefiro-nao-informar">Prefiro não informar</label>
+            <input type="radio" name="sexo" id="" value="nao informar">
+            <br><br>
+
+            <label for="">Habilidades</label><br>
+            <input type="checkbox" name="habilitades" id="html" value="html"><label for="html">HTML</label><br>
+            <input type="checkbox" name="habilitades" id="css" value="css"><label for="css">CSS</label><br>
+            <input type="checkbox" name="habilitades" id="s" value="js"><label for="JS">JS</label>
+            <br><br>
+
+            <label for="cidades">Cidades:</label><br>
+            <select name="cidades" id="cidades">
+                <option value="">--Selecione--</option>
+                <option value="rio">Rio de Janeiro</option>
+                <option value="sãoPaulo">Maior de todas, São Paulo!</option>
+            </select>
+            <br><br>
+
+            <label for="carros">Carros:</label>
+            <select name="carros" id="carros">
+                <optgroup label="Honda">
+                    <option value="civic">Civic</option>
+                </optgroup>
+                <optgroup label="GM">
+                    <option value="celta">Celta</option>
+                    <option value="corsa">Corsa</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            <label for="listaFrutas">Digite sua fruta preferida:</label>
+            <input list="listaFrutas" type="text" name="frutas" id="" placeholder="digite o nome da sua fruta favórita">
+            <datalist id="listaFrutas">
+                <option value="Abacate">
+                <option value="Abacaxi">
+                <option value="Açai">
+                <option value="Acerola">
+            </datalist>
+            <br><br>
+
+            <button>Enviar</button>
+            <input type="button" value="Enviar">
+        </fieldset>
+        
+    </form>
+</body>
+</html>

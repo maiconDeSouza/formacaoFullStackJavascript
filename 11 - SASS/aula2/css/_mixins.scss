@@ -1,0 +1,18 @@
+@mixin list--style($espacamento: 0, $margem: 0, $estilo: none) {
+    padding: $espacamento;
+    margin: $margem;
+    list-style: $estilo;
+}
+
+
+@mixin bg-effect($effect) {
+    @if $effect == success{
+        background-color: springgreen;
+    }@else if $effect == danger{
+        background-color: red;
+    }@else if $effect == warning{
+        background-color: yellow;
+    } @else {
+        background-color: wheat;
+    }
+}

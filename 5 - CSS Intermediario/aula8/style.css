@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.quadrado{
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.circulo{
+    position: absolute;
+    background-color: brown;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

@@ -1,0 +1,13 @@
+.conteudo{
+    border: 2px solid red;
+    height: 500px;
+    position: relative;
+}
+
+.quadrado{
+    background-color: cadetblue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+}

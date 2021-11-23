@@ -1,0 +1,15 @@
+body{
+    background-image: url(https://br.web.img2.acsta.net/medias/nmedia/18/91/08/82/20128877.JPG);
+    background-repeat: no-repeat;
+    /* background-position: 100% 10%; */
+    background-position: center center;
+    /* background-position: right center; */
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+p{
+    color: #222222;
+}

@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+.confirmacao{
+    width: 300px;
+    min-height: 50px;
+    background-color: rgba(128, 255, 0, 0.329);
+    position: absolute;
+    bottom: 30px;
+    left: -100%;
+    border: 2px solid green;
+    color: green;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 900;
+    transition: all 600ms ease;
+}
+
+.confirmacao2 {
+    left: 30px;
+}

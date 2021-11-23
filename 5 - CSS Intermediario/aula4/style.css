@@ -1,0 +1,19 @@
+a.teste1{
+    width: 150px;
+    height: 150px;
+    background-color: teal;
+    /* display: block; */
+    display: inline-block;
+}
+
+ul{
+    background-color: gray;
+    padding: 20px;
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0;
+}
+
+li{
+    display: inline-block;
+}

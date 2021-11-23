@@ -1,0 +1,63 @@
+@import 'base';
+@import 'variables';
+@import 'mixins';
+@import 'extends';
+
+.container{
+    display: flex;
+    justify-content: space-around;
+
+    .box{
+        width: 30%;
+        background-color: $color-white;
+        border-radius: 8px;
+        padding: 20px;
+
+        &.active{
+            background-color: teal;
+        };
+
+        h2{
+            color: tan;
+        };
+        p{
+            color: springgreen;
+
+            &.hidden{
+                display: none;
+            }
+        };
+        a{
+            color: tomato;
+            &:hover{
+                color: blue;
+
+                & + p.hidden{
+                    display: block;
+                }
+            }
+        }
+        ul{
+            @include list--style(100px, 10px, square);
+        }
+
+        .success{
+            @extend %box-alert;
+            @include bg-effect(success)
+        }
+
+        .danger{
+            @extend %box-alert;
+            @include bg-effect(danger)
+        }
+
+        .warning{
+            @extend %box-alert;
+            @include bg-effect(warning)
+            
+        }
+        
+    }
+
+    
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.container{
+            height: 600px;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .caixa{
+            width: 100px;
+            height: 100px;
+        }
+
+        .caixa:nth-child(1){
+            background-color: brown;
+        }
+
+        .caixa:nth-child(2){
+            align-self: flex-end;
+            background-color: cornflowerblue;
+            margin-bottom: 151px;
+        }
+
+        .caixa:nth-child(3){
+            background-color: deeppink;
+            order: -1;
+        }
+        .caixa:nth-child(4){
+            background-color: gold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="caixa">1</div>
+        <div class="caixa">2</div>
+        <div class="caixa">3</div>
+        <div class="caixa">4</div>
+
+    </div>
+</body>
+</html>

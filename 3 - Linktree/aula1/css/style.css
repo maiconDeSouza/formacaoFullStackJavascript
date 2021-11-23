@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-color: rgb(54,77,204);
+    background: linear-gradient(176deg, rgba(54,77,204,1)0%, rgba(19,35,124,1)100%);
+    color: blanchedalmond;
+    font-family: 'Raleway', sans-serif;
+}
+
+.profile{
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 1px;
+}
+
+h2{
+    font-size: 16px;
+    
+}
+
+.avatar{
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 20px #fff;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 20px 0;
+}
+.social img{
+    width: 33px;
+}
+
+.links--list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.links--list li{
+    background-color: #fff;
+    height: 80px;
+    width: 350px;
+    margin: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 0 15px #fff;
+    border-radius: 10px;
+}
+
+.links--list li a{
+    text-decoration: none;
+    text-align: center;
+}
+.links--list h3{
+    margin-bottom: 10px;
+}
+.links--list p{
+    color: rgb(151, 150, 150);
+}

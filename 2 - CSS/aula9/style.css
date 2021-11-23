@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Raleway&display=swap');
+
+body{
+    background-color: #dfdfdf;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    margin-bottom: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+}
+
+.italia{
+    margin-top: 0;
+    font-style: italic;
+    color: #737373;
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.foto{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    
+    width: 200px;
+    margin: 30px 30px;
+    box-shadow: 0px 0px 15px #959595;
+}

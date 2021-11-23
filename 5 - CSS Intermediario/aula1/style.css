@@ -1,0 +1,37 @@
+.exemplo{
+    border: 1px solid red;
+    padding: 20px;
+    margin: 20px
+}
+
+p{
+    color: orange;
+}
+
+div p{
+    color: blue;
+}
+
+p.pink{
+    color: pink;
+}
+
+h1, h2, h3{
+    color: purple;
+}
+
+/* .exemplo2 p{
+    color: saddlebrown;
+} */
+
+.exemplo2 > p{
+    color: saddlebrown;  /*somente filhos diretos de .exemplo2 e somente os filhos p */
+}
+
+.exemplo3 + p{
+    color: tomato;
+}
+
+.exemplo4 ~ p{
+    color: yellowgreen;
+}

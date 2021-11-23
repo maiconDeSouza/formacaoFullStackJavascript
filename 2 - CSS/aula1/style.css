@@ -1,0 +1,19 @@
+body{
+    background-color: cornflowerblue;
+}
+
+.crimson{
+    color: crimson;
+}
+
+h3{
+    color: crimson; /*caso eu queira aplicar a todos h3*/
+}
+
+.foto{
+    width: 200px;
+}
+
+#titulo--principal{
+    color: darkmagenta;
+}

@@ -1,0 +1,16 @@
+a.teste1{
+    width: 150px;
+    height: 150px;
+    background-color: teal;
+    /* display: block; */
+    display: inline-block;
+}
+
+ul{
+    background-color: gray;
+    padding: 20px;
+}
+
+li{
+    display: inline-block;
+}

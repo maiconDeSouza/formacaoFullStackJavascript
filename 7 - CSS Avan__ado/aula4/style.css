@@ -1,0 +1,12 @@
+body{
+    font-size: 15px;
+}
+.box{
+    width: 2em;
+    height: 100vh;
+    background-color: #000;
+}
+
+p{
+    font-size: 2em;
+}

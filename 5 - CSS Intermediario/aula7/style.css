@@ -1,0 +1,24 @@
+p::first-line{
+    color: orangered;
+}
+
+p::first-letter{
+    font-size: 29px;
+}
+
+p{
+    text-indent: 20px;
+}
+
+h1::before{
+    background: url("https://ecommercerocket.com.br/wp-content/uploads/2020/08/foguete-de-pe.png");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    content: "";
+}
+
+::selection{
+    background-color: teal;
+}

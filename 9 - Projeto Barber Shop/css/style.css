@@ -1,0 +1,426 @@
+:root{
+    --primary-color: #917758;
+    --secundary-color: #3c2915;
+    --primary-color-light: #f5eee6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto
+}
+
+
+/****************
+  HOME
+****************/
+.home{
+    background-image: url(../images/bg-home.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.home .header{
+    padding: 30px 0;
+}
+
+.home .header .nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.home .header .nav ul li{
+    margin: 0 20px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.home .header .nav ul li a:hover{
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.home .header .nav ul li .logo{
+    margin: 0 30px;
+}
+
+/****************
+  HOME - Banner
+****************/
+
+.banner{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -340px;
+    margin-top: -73px;
+}
+
+.banner h1{
+    font-size: 120px;
+    margin: 10px 0;
+}
+
+.banner h2{
+    margin-bottom: 20px;
+}
+
+.banner h3{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+/****************
+  About
+****************/
+
+.about{
+    background-color: var(--primary-color);
+}
+
+.about .container{
+    display: flex;
+}
+
+.about .timing{
+    width: 33%;
+    background-image: url(../images/brush-big.jpg);
+    padding: 20px;
+    position: relative;
+    top: -50px
+}
+
+.about .timing .overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px 20px;
+    
+}
+
+.about .timing .overlay .classic-cut{
+    width: 50px;
+}
+
+.about .timing .overlay h2{
+    color: var(--primary-color);
+    font-size: 30px;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--primary-color);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    
+}
+
+.about .timing .overlay .text{
+    margin: 10px 0;
+}
+.about .timing  .text:after{
+    content: "•";
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about .timing  .text:last-of-type:after{
+    content: "|";
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.about .timing .overlay .text h3{
+    color: gray;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.about .timing .overlay .text span{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.about .timing .overlay .andress-phone{
+    text-align: center;
+}
+
+.about .timing .overlay span{
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+/****************
+  Experience
+****************/
+
+.about .experience{
+    width: 66%;
+    color: #fff;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+
+.about .experience h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+.about .experience h2:after{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .age52{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience  .age52 p{
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+/****************
+  services
+****************/
+
+.services{
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--primary-color-light);
+}
+
+.services h2{
+    color: var(--secundary-color);
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.services .boxes{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .boxes .box{
+    border: 3px solid var(--primary-color);
+    padding: 50px 40px;
+    margin: 30px;
+}
+
+.services .boxes .box h3{
+    margin-bottom: 5px;
+    color: var(--secundary-color);
+}
+
+.services .boxes .box .secund-img{
+    margin-bottom: 20px;
+}
+
+.services .boxes .box p{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/****************
+  appointment
+****************/
+
+.appointment{
+    background-color: var(--primary-color);
+    /* text-align: center; */
+    padding: 100px 0;
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+    height: 100vh;
+}
+
+.appointment .title{
+    text-align: center;
+}
+.appointment .title h2{
+    font-size: 50px;
+    color:  var(--primary-color-light);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+
+.appointment .form{
+    margin-top: 80px;
+}
+
+.appointment .form label{
+    display: block;
+    text-align: left;
+    color: var(--primary-color-light);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.appointment .form .personal-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment .form .personal-data input, select{
+    padding: 10px;
+    width: 240px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.appointment .form .personal-data textarea{
+    width: 100%;
+}
+
+.appointment button{
+    background-color: var(--secundary-color);
+    color:var(--primary-color-light);
+    padding: 15px 40px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 10px;
+    
+    
+}
+
+/****************
+  Gallery
+****************/
+
+.gallery{
+    padding: 100px 0;
+    background-color: var(--primary-color-light);
+}
+
+.gallery .title{
+    text-align: center;
+}
+
+.gallery .title h2{
+    font-size: 50px;
+    color:  var(--secundary-color);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.gallery .gallery-wrapper{
+    margin: 50px auto;
+    height: 100vh;
+    width: 900px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    
+}
+
+.gallery .gallery-wrapper div{
+    border: 5px solid var(--primary-color);
+    margin: 6px;
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img{
+    width: 100%;
+}
+
+
+/****************
+  Location
+****************/
+.location{
+    background-image: url(../images/bg-location.jpg);
+    padding: 100px 0;
+    background-size: cover;
+}
+
+.location .map-head{
+    color: #fff;
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location .map-head .info{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+
+.location .map-head .info .icon{
+    border: 2px solid var(--primary-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.location .map-head .info span{
+    color: var(--primary-color-light);
+    font-weight: 100;
+    font-size: 14px;
+}
+
+/****************
+  Footer
+****************/
+
+.footer{
+    text-align: center;
+    padding: 7vh;
+    background-color: #191919;
+    color: #fff;
+}

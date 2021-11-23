@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: cornsilk;
+}
+
+div{
+    text-align: center;
+}
+img{
+    width: 40%;
+}
+
+@media (max-width: 500px){
+    img{
+        width: 100%;
+    }
+    body{
+        background-color: cornsilk;
+        color: black;
+    }
+}

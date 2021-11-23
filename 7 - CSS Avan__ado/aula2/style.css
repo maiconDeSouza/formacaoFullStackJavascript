@@ -1,0 +1,14 @@
+@import "variaveis.css";
+
+h1{
+    color: var(--cor-primaria);
+}
+
+p{
+    color: var(--cor-primaria);
+}
+
+button{
+    background-color: var(--cor-primaria);
+    color: #fff;
+}
