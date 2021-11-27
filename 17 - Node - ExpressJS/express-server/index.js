@@ -1,10 +1,11 @@
 const express = require('express')
 const app = express()
 const path = require('path') //Biblioteca do node
+app.set('view engine', 'ejs')
 
 
 // Definindo os arquivos estáticos
-app.use(express.static(path.join(__dirname, 'views'))) // forma mais enxuta
+// app.use(express.static(path.join(__dirname, 'views'))) // forma mais enxuta
 
 // Definindo os arquivos públicos
 const publicFolder = path.join(__dirname, 'public')
@@ -14,11 +15,15 @@ app.use(expressPublic)
 
 //rotas
 app.get('/', (req, res) =>{
-    res.send('views/index')
+    res.render('index')
 })
 
-app.get('/sobre', (req, res) =>{
-    res.send('sobre')
+app.get('/produtos', (req, res) =>{
+    res.render('produtos')
+})
+
+app.get('/quemsomos', (req, res) =>{
+    res.render('quemsomos')
 })
 
 //404 error (not found)
