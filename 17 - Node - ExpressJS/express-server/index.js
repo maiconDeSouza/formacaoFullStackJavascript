@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 const path = require('path') //Biblioteca do node
+const fs = require('fs')
+
+
 app.set('view engine', 'ejs')
 
 
@@ -11,6 +14,9 @@ app.set('view engine', 'ejs')
 const publicFolder = path.join(__dirname, 'public')
 const expressPublic = express.static(publicFolder)
 app.use(expressPublic)
+
+//habilitar server para receber dados via post (formulário)
+app.use(express.urlencoded({extended:true}))
 
 
 //rotas
@@ -64,6 +70,29 @@ app.get('/posts', (req, res)=>{
     })
 })
 
+app.get('/cadastro-posts', (req, res) =>{
+    const {cadastro} = req.query
+    res.render('cadastro-posts', {
+        title: 'Digital Tech - Cadastro Posts',
+        cadastrado: cadastro
+    })
+})
+
+app.post('/salvar-post', (req, res) =>{
+    const {titulo, texto} = req.body
+    const data = fs.readFileSync('./store/post.json')
+    const posts = JSON.parse(data)
+
+    posts.push({
+        titulo,
+        texto,
+    })
+
+    const postString = JSON.stringify(posts)
+    fs.writeFileSync('./store/post.json', postString)
+    res.redirect('/cadastro-posts?cadastro=1')
+})
+
 //404 error (not found)
 app.use((req, res) =>{ //middleware
     res.send('Olá, essa página não foi encontrada!')
@@ -72,6 +101,6 @@ app.use((req, res) =>{ //middleware
 
 
 //executando o servidor
-const port =  8080
+const port =  3333
 app.listen(port, () => console.log(`Server is Listening on port ${port}`))
 
