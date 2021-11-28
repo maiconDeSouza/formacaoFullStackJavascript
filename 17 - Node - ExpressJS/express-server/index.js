@@ -26,6 +26,35 @@ app.get('/quemsomos', (req, res) =>{
     res.render('quemsomos')
 })
 
+app.get('/posts', (req, res)=>{
+    res.render('posts', {
+        title: 'Digital Tech - Posts',
+        posts: [
+            {
+                title: 'Novidades da tecnologia',
+                text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
+                laudantium magnam. Odio facilis quam, modi ipsa ipsum consequuntur reprehenderit. 
+                Distinctio animi esse dicta iure nesciunt mollitia laudantium eaque omnis quos.
+                `
+            },
+            {
+                title: 'JS o Futuro e o Presente',
+                text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
+                laudantium magnam. Odio facilis quam, modi ipsa ipsum consequuntur reprehenderit. 
+                Distinctio animi esse dicta iure nesciunt mollitia laudantium eaque omnis quos.
+                `
+            },
+            {
+                title: 'Node o ponta pé da revolução',
+                text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
+                laudantium magnam. Odio facilis quam, modi ipsa ipsum consequuntur reprehenderit. 
+                Distinctio animi esse dicta iure nesciunt mollitia laudantium eaque omnis quos.
+                `
+            }
+        ]
+    })
+})
+
 //404 error (not found)
 app.use((req, res) =>{ //middleware
     res.send('Olá, essa página não foi encontrada!')
@@ -34,6 +63,6 @@ app.use((req, res) =>{ //middleware
 
 
 //executando o servidor
-const port = process.env.PORT || 8080
+const port =  8080
 app.listen(port, () => console.log(`Server is Listening on port ${port}`))
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <%- include('partials/head.ejs') %>
+    <title>Home</title>
+</head>
+<body>
+    <header class="header--principal">
+        <%- include('partials/header.ejs') %>
+    </header>
+    <section class="section--principal">
+        <nav>
+            <%- include('partials/nav.ejs') %> 
+        </nav>
+        <article>
+            <h1>Posts</h1>
+            <div class="posts">
+                <% posts.forEach(item => { %>
+                 <div class="post">
+                     <h3><%- item.title %> </h3>
+                     <p>
+                         <%- item.text %> 
+                     </p>
+                 </div>
+                <% }) %>
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer--principal">
+        <%- include('partials/footer.ejs') %>
+    </footer>
+
+
+    <%- include('partials/srcjs.ejs') %>
+</body>
+</html>
