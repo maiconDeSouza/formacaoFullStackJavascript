@@ -15,15 +15,21 @@ app.use(expressPublic)
 
 //rotas
 app.get('/', (req, res) =>{
-    res.render('index')
+    res.render('index', {
+        title: 'Digital Tech - Home'
+    })
 })
 
 app.get('/produtos', (req, res) =>{
-    res.render('produtos')
+    res.render('produtos', {
+        title: 'Digital Tech - Produtos'
+    })
 })
 
 app.get('/quemsomos', (req, res) =>{
-    res.render('quemsomos')
+    res.render('quemsomos', {
+        title: 'Digital Tech - Quem Somos'
+    })
 })
 
 app.get('/posts', (req, res)=>{
@@ -35,21 +41,24 @@ app.get('/posts', (req, res)=>{
                 text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
                 laudantium magnam. Odio facilis quam, modi ipsa ipsum consequuntur reprehenderit. 
                 Distinctio animi esse dicta iure nesciunt mollitia laudantium eaque omnis quos.
-                `
+                `,
+                stars: 3
             },
             {
                 title: 'JS o Futuro e o Presente',
                 text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
                 laudantium magnam. Odio facilis quam, modi ipsa ipsum consequuntur reprehenderit. 
                 Distinctio animi esse dicta iure nesciunt mollitia laudantium eaque omnis quos.
-                `
+                `,
+
             },
             {
                 title: 'Node o ponta pé da revolução',
                 text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
                 laudantium magnam. Odio facilis quam, modi ipsa ipsum consequuntur reprehenderit. 
                 Distinctio animi esse dicta iure nesciunt mollitia laudantium eaque omnis quos.
-                `
+                `,
+                stars:5
             }
         ]
     })
