@@ -26,6 +26,9 @@
         </div>
         <button type="submit">Cadastrar</button>
     </form>
+    <% if (typeof msg !== 'undefined') { %>
+        <h3><%= msg %> </h3>
+    <% } %>
 
     <%-include('partials/foot.ejs') %> 
 </body>

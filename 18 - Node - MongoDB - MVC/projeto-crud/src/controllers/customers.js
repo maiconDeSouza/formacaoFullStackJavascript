@@ -25,7 +25,10 @@ async function add(req, res){
     })
 
     register.save()
-    res.send('cadastro Realizado')
+    res.render('register', {
+        title: "Cadastro de Clientes",
+        msg: "Cadastro realizado com Sucesso"
+    })
 }
 
 function remove(){
