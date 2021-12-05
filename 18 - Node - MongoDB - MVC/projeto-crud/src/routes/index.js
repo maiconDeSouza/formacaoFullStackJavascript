@@ -12,5 +12,8 @@ const IndexController = require('../controllers/index')
 
     router.post('/register/add', CustomersController.add)
 
+    //listar usuários
+    router.get('/list-users', CustomersController.listerUsers)
+
 
 module.exports = router

@@ -32,9 +32,19 @@ function remove(){
     
 }
 
+async function listerUsers(req, res){
+    const users = await CustomersModel.find()
+
+    res.render('list-users', {
+        title: 'Listagem de Usuários',
+        users,
+    })
+}
+
 module.exports = {
     add,
     remove,
-    index
+    index,
+    listerUsers
 
 }

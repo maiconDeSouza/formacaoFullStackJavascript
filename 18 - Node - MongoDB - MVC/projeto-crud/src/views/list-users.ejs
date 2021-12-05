@@ -4,8 +4,17 @@
    <%-include('partials/head.ejs') %> 
 </head>
 <body>
-    <h1><%= title %> </h1>
+    <%= title %> 
     <%-include('partials/nav.ejs') %> 
+
+    <hr>
+    <ul>
+        <% users.forEach(element => { %>
+            <li>
+                <%= element.name %> 
+            </li>
+            <% }) %>
+    </ul>
 
     <%-include('partials/foot.ejs') %> 
 </body>
