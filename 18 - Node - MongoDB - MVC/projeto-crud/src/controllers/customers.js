@@ -31,9 +31,6 @@ async function add(req, res){
     })
 }
 
-function remove(){
-    
-}
 
 async function listerUsers(req, res){
     const users = await CustomersModel.find()
@@ -44,10 +41,51 @@ async function listerUsers(req, res){
     })
 }
 
+
+async function indexEdit(req, res){
+    const {id} = await req.query
+    const user = await CustomersModel.findById(id)
+    
+    res.render('edit', {
+        title: 'Editar Usuário',
+        user
+    })
+}
+
+async function edit(req, res){
+    const {
+        name,
+        age,
+        email,
+    } = await req.body
+
+    const {id} = await req.params
+
+    const user = await CustomersModel.findById(id)
+
+    user.name = name
+    user.age = age
+    user.email = email
+    user.save()
+
+    res.render('edit', {
+        title: "Editar Usuário",
+        user,
+        msg: "Usuário Alterado com Sucesso"
+    })
+}
+
+function remove(){
+    
+}
+
+
 module.exports = {
     add,
     remove,
     index,
-    listerUsers
+    listerUsers,
+    indexEdit,
+    edit
 
 }

@@ -12,6 +12,7 @@
         <% users.forEach(element => { %>
             <li>
                 <%= element.name %> 
+                <a href="/edit?id=<%= element._id %>">[editar]</a>
             </li>
             <% }) %>
     </ul>
