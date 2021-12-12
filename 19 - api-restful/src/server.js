@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 
 
 
@@ -9,6 +10,11 @@ const app = express()
 
 //conexao com o banco de dados
 db.connect()
+
+//habilita CORS
+app.use(cors({
+    origin: 'http://127.0.0.1:5500'
+}))
 
 //habilita server para receber via json
 app.use(express.json())
