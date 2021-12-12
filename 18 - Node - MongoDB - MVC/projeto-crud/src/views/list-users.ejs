@@ -13,6 +13,8 @@
             <li>
                 <%= element.name %> 
                 <a href="/edit?id=<%= element._id %>">[editar]</a>
+                <a href="/remove/<%= element._id %>">[remover]</a>
+
             </li>
             <% }) %>
     </ul>
