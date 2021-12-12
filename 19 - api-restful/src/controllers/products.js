@@ -3,9 +3,15 @@ const ProductsModel = require('../models/products')
 
 
 async function get(req, res){
-    const products = await ProductsModel.find()
+    const {id} = await req.params
 
-    res.send(products)
+    if(id){
+        const products = await ProductsModel.find({_id:id})
+        res.send(products)
+    } else {
+        const products = await ProductsModel.find()
+        res.send(products)
+    }
 }
 
 module.exports = {
