@@ -43,12 +43,21 @@ async function put(req, res){
     // await product.updateOne(req.body)
     
     // res.send(product)
-
     
+}
+
+async function deleteProd(req, res){
+    const {id} = await req.params
+
+   await ProductsModel.deleteOne({_id: id})
+
+   res.send()
+
 }
 
 module.exports = {
     get,
     post,
-    put
+    put, 
+    deleteProd
 }
