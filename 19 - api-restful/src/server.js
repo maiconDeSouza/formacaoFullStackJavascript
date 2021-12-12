@@ -1,10 +1,13 @@
 const express = require('express')
 const app = express()
 
+const routes = require('./routes/routes')
 
-app.use('/', (req, res) =>{
-    res.send('Olá Maicon!')
-})
+//habilita server para receber dados via post (formulário)
+app.use(express.urlencoded({extended:true}))
+
+
+app.use('/api', routes)
 
 
 const port = process.env.port || 7981
