@@ -102,6 +102,7 @@ obterLista()
                         })
                     }).then(resp => {
                         formEdit.reset()
+                        div.classList.add('hidden')
                         console.log(resp)
                         obterLista()
                     })
