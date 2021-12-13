@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Front API</title>
 </head>
 <body>
@@ -33,6 +34,30 @@
             <button type="submit">Cadastrar</button>
         </div>
     </form>
+
+    <div class="hidden">
+        <hr>
+        <h2>Editar Produto</h2>
+        <form id="form-edit">
+            <input type="hidden" name="id">
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="">
+            </div>
+    
+            <div>
+                <label for="brand">Marca</label>
+                <input type="text" name="brand" id="">
+            </div>
+            <div>
+                <label for="price">Preço</label>
+                <input type="text" name="price" id="">
+            </div>
+            <div>
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
     
     <script src="app.js"></script>
 </body>
