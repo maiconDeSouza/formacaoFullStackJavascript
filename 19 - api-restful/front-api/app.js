@@ -8,8 +8,30 @@ obterLista()
             productsList.innerHTML = ''
             data.forEach(element => {
                 const li = document.createElement('li')
-                li.textContent = `Nome: ${element.name} - Empresa: ${element.brand} - Valor ${element.price}`
+                const a = document.createElement('a')
+                a.setAttribute('href', '#')
+                a.setAttribute('class', 'botao-excluir')
+                a.setAttribute('data-id', `${element._id}`)
+                a.textContent = '[remove]'
+                li.textContent = `Nome: ${element.name} - Empresa: ${element.brand} - Valor ${element.price} - `
+                li.appendChild(a)
                 productsList.appendChild(li)
+            })
+
+            const botoesExcluir = document.querySelectorAll('.botao-excluir')
+            botoesExcluir.forEach(botao => {
+                botao.addEventListener('click', e => {
+                    e.preventDefault()
+                    const el = e.target
+                    const id = el.getAttribute('data-id')
+
+                    fetch(`${API_URL}/${id}`, {
+                        method: 'DELETE'
+                    }).then(resp => {
+                        console.log(resp)
+                        obterLista()
+                    })
+                })
             })
         }
 
