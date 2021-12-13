@@ -7,13 +7,33 @@
     <title>Front API</title>
 </head>
 <body>
+
+    <h1>listagem de produtos</h1>
+
+    <ul id="products-list"></ul>
+
+    <hr>
+
+    <h2>Cadastrar Produtos</h2>
+    <form id="form">
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="">
+        </div>
+
+        <div>
+            <label for="brand">Marca</label>
+            <input type="text" name="brand" id="">
+        </div>
+        <div>
+            <label for="price">Preço</label>
+            <input type="text" name="price" id="">
+        </div>
+        <div>
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
     
-    <script>
-        fetch('http://localhost:7981/api/products').then(res => {
-            res.json().then(data => {
-                console.log(data)
-            })
-        })
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
