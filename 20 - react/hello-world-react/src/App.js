@@ -16,10 +16,10 @@ COMPONENTES - Criando e Usando React
 */
 
 function App(){
-    return <>
+    return (<>
             <Header titulo="Título" subtitulo="Subtitulo"/>
 
-        </>
+        </>)
     
 }
 
