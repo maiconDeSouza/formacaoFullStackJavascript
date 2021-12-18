@@ -1,8 +1,12 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Counter.css'
 
 const Counter = () => {
     const [count, setCount] = useState(0)
+    useEffect(()=>{
+        console.log('renderizou')
+    }, [count])
+
     const handleOnClick = (e) => {
         const el = e.target.innerText
 
