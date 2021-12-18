@@ -1,0 +1,14 @@
+.card{
+    width: 30%;
+    /* height: 20vh; */
+    background-color: silver;
+    padding: 20px;
+    border-radius: 8px;
+    /* margin: 0 5px; */
+    margin: 30px 0 50px 0;
+    box-shadow: 0 0 10px rgb(126, 126, 126);
+}
+
+.img{
+    width: 100%;
+}
