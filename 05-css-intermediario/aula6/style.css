@@ -31,3 +31,8 @@ ul li:last-child{
 ul li:nth-child(4){
     color: orange;
 }
+
+/* ul:hover li{
+    font-size: 50px;
+    exemplo bem legal do poder do css
+} */
