@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header--principal{
+    background-image: url("../img/back.jpg");
+    text-align: center;
+    padding: 50px 0;
+    /* height: 100px;
+    line-height: 100px; */
+    font-size: 40px;
+    box-shadow: 0 0 20px black;
+}
+
+.logo{
+    width: 200px;
+}
+
+.section--principal{
+    margin-top: 20px;
+    display: flex;
+}
+
+.section--principal nav ul a{
+    text-decoration: none;
+    line-height: 50px;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+
+.section--principal nav ul li{
+    background-color: rgb(10, 207, 233);
+    margin: 10px 0;
+    height: 50px;
+    width: 180px;
+    text-align: center;
+    border-radius: 15px 0px 15px 0;
+   
+}
+.section--principal nav ul{
+    list-style: none;
+}
+
+.section--principal nav{
+    width: 30%;
+    padding: 30px;
+}
+
+.section--principal article{
+    width: 70%;
+    background-color: #d8d8d8;
+    padding: 30px;
+    margin-right: 20px;
+    border-radius: 20px 0 0 0;
+}
+
+.footer--principal{
+    text-align: center;
+    background-color: grey;
+    padding: 20px;
+    
+}
+
+
+article ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+article li{
+    list-style: none;
+}
+
+ p{
+    margin-top: 5px;
+}
+
+article li p img{
+    width: 20px;
+}

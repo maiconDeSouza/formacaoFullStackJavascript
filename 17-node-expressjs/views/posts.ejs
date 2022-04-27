@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+
+    <section class="section--principal">
+
+        <%- include('partials/nav.ejs') %>
+        
+        <article>
+            <h2><%= h2 %> </h2>
+            <ul>
+                <% posts.forEach( e =>{ %>
+                    <li>
+                        <h3><%= e.title %> </h3>
+                        <p><%= e.text %> </p>
+                        <p><% if (e.stars) { %>
+                            <% for( let index = 0; index < e.stars; index++ ) { %>
+                                <img src="img/star.png" alt="">
+                            <% } %>
+                        <% } %></p>
+                    </li>
+              <%  }) %>
+            </ul>
+        </article>
+
+        
+    
+        </section>
+    
+        <%- include('partials/footer.ejs') %>
+</body>
+</html>
