@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <%- include('partials/head.ejs')  %> 
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome">
+        </div>
+        <div>
+            <label for="age">Idade</label>
+            <input type="text" name="age" id="age" placeholder="Digite sua idade">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+        </div>
+        <div>
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <%- include('partials/foot.ejs') %> 
+</body>
+</html>
