@@ -4,8 +4,9 @@
     <%- include('partials/head.ejs')  %> 
 </head>
 <body>
-    <h1>Formulário</h1>
-    <form>
+    <%- include('partials/nav.ejs') %>
+    
+    <form action="/cadastro/add" method="POST">
         <div>
             <label for="name">Nome</label>
             <input type="text" name="name" id="name" placeholder="Digite seu nome">
@@ -24,7 +25,9 @@
         </div>
         <button type="submit">Cadastrar</button>
     </form>
-
+    <p>
+        <%= cadastro %> 
+    </p>
     <%- include('partials/foot.ejs') %> 
 </body>
 </html>

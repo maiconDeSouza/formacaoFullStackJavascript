@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <%- include('partials/head.ejs')  %> 
+</head>
+<body>
+    <%- include('partials/nav.ejs') %>
+    
+    <form action="/edit/<%= user._id %> " method="POST">
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome" value="<%= user.name %> ">
+        </div>
+        <div>
+            <label for="age">Idade</label>
+            <input type="text" name="age" id="age" placeholder="Digite sua idade" value="<%= user.age %> ">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" value="<%= user.email %> ">
+        </div>
+        <button type="submit">Editar</button>
+    </form>
+    <p><%= user.name %> </p>
+    <%- include('partials/foot.ejs') %> 
+    <script>
+        console.log(user)
+    </script>
+</body>
+</html>
