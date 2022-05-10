@@ -15,10 +15,45 @@ async function get(req, res){
 }
 
 function post(req, res){
+    const {
+        name,
+		brand,
+		price
+	} = req.body
 
+    const register = new ProductsModel({
+        name,
+        brand,
+        price
+    })
+
+    register.save()
+    
+    res.status(201).json(register)
 }
 
-function put(req, res){
+async function put(req, res){
+    const { id } = req.params
+    // const { name, brand, price} = req.body
+    // const atualizacao = {
+    //     name,
+    //     brand,
+    //     price
+    // }
+
+    // const product = await ProductsModel.findById(id)
+    
+    // for(let prop in product){
+    //     product[prop] = atualizacao[prop] ? atualizacao[prop] : product[prop]
+    // }
+
+    // await product.updateOne(req.body)
+
+    // product.save()
+
+    const product = await ProductsModel.findByIdAndUpdate({_id: id}, req.body, {new: true})
+    
+    res.status(200).json(product)
 
 }
 
