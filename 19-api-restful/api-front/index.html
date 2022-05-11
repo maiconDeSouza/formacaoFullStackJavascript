@@ -4,19 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GET</title>
+    <style>
+      form div{
+          margin-top: 20px;
+      }
+      button{
+          margin-top: 15px;
+      }
+    </style>
+    <title>Produtos</title>
 </head>
 <body>
+
+    <div>
+        <h1>Lista de Produtors</h1>
+        <ul>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <form>
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="brand">Brand:</label>
+                <input type="text" name="brand" id="brand">
+            </div>
+            <div>
+                <label for="price">Price:</label>
+                <input type="text" name="price" id="price">
+            </div>
+            <button type="submit" id="">Cadastrar</button>
+        </form>
+    </div>
     
 
-    <script>
-       async function fet(){
-        const retorno = await fetch('http://localhost:1992/api/products')
-        const retorno2 = await retorno.json()
-
-        console.log(retorno2)
-       }
-       fet()
-    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
