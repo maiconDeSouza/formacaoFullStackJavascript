@@ -1,6 +1,7 @@
 import React from "react"
 import Header from './Header'
 import Content from "./Content"
+import Boxes from "./Boxes"
 /*
 Componentes - Criando e Usando
 
@@ -30,6 +31,7 @@ function App(){
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque saepe molestiae. Doloremque, nemo fuga architecto delectus ipsum, accusamus deserunt velit a laboriosam reprehenderit fugit suscipit enim dolorum, molestiae perspiciatis.
                 </p>
             </Content>
+            <Boxes />
         </>
     )
 }
